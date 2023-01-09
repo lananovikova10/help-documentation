@@ -1,11 +1,4 @@
----
-title: %product% 101
-description: The %product% design system is used by designers and developers to build world-class Shopify admin experiences.
-keywords:
-- polaris
-- shopify admin
-  order: 0
----
+# %product% 101
 
 ## What’s the %product% admin?
 
