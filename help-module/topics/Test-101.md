@@ -4,7 +4,7 @@
 
 Merchants set up their store, configure settings, and manage their business using the admin. It includes core aspects of the merchant’s business, including orders, products, and customers.
 
-![Partial screenshots of the admin in mobile and web](/images/getting-started/polaris-101/mobile-web-admin@2x.png)
+![Partial screenshots of the admin in mobile and web](mobile-web-admin@2x.png)
 
 ## What is %product%?
 
