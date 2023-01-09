@@ -839,7 +839,7 @@ Always use apostrophes, not vertical (straight) quotes.
 
 <!-- end -->
 
-### Colons
+### Colonshelp-
 
 Avoid using colons in sentences. If you need to use one, don’t capitalize the first word after the colon unless it’s a proper noun.
 
@@ -956,7 +956,7 @@ Always use the ellipsis character, not three periods.
 
 #### Do
 
-<code style="font-size: 5rem; line-height: 0; background-color: transparent">…</code> <kbd>option</kbd> + <kbd>;</kbd>
+<code style="font-size: 5rem; line-height: 0; background-color: transparent">… <kbd>option</kbd> + <kbd>;</kbd></code>
 
 #### Don’t
 
