@@ -48,8 +48,6 @@ jobs:
           args: unzip -qq ${{ env.ARTIFACT }} -d dir
       - name: Setup Pages
         uses: actions/configure-pages@v2
-      - name: Grant permission
-        run: chmod -R a+x dir
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
