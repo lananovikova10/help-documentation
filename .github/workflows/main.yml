@@ -15,6 +15,11 @@ permissions:
 env:
   PRODUCT: help-module/hp
   ARTIFACT: webHelpHP2-all.zip
+  ALGOLIA_APP_NAME: 0J2F033YWG
+  ALGOLIA_INDEX_NAME: prod_HELP_DOCUMENTATION
+  ALGOLIA_KEY: 85724485b4a5899262ac9c8856168fc2
+  CONFIG_JSON_PRODUCT: help
+  CONFIG_JSON_VERSION: main
 
 jobs:
   build-job:
@@ -36,6 +41,36 @@ jobs:
            name: algolia-indexes
            path: artifacts/algolia-indexes-HP.zip
            retention-days: 7
+           
+  publish-indexes:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    container:
+      image: registry.jetbrains.team/p/writerside/builder/algolia-publisher:2.0.32-2
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+     - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: algolia-indexes
+
+      - name: Unzip artifact
+        uses: montudor/action-zip@v1
+        with:
+          args: unzip -qq ${{ env.ARTIFACT }} -d algolia-index
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          env "algolia-key=${'$'}ALGOLIA_KEY" java -jar /opt/builder/help-publication-agent.jar \
+          update-index \
+          --application-name ${'$'}ALGOLIA_APP_NAME \
+          --index-name ${'$'}ALGOLIA_INDEX_NAME \
+          --product ${'$'}CONFIG_JSON_PRODUCT \
+          --version ${'$'}CONFIG_JSON_VERSION \
+          --index-directory algolia-index/ \
+          2>&1 | tee algolia-update-index-log.txt
 
   deploy:
     environment:
