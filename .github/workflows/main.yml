@@ -28,9 +28,13 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
            name: artifact
-           path: |
-              artifacts/${{ env.ARTIFACT }}
-              artifacts/algolia-indexes-*.zip
+           path: artifacts/${{ env.ARTIFACT }}
+           retention-days: 7
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+           name: algolia-indexes
+           path: artifacts/algolia-indexes-HP.zip
            retention-days: 7
 
   deploy:
