@@ -56,7 +56,7 @@ jobs:
        uses: actions/download-artifact@v3
        with:
           name: algolia-indexes
-          path: artifacts/algolia-indexes-HP.zip
+          path: algolia-indexes-HP.zip
 
      - name: Unzip artifact
        uses: montudor/action-zip@v1
