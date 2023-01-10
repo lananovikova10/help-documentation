@@ -32,7 +32,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
-           name: artifact
+           name: webhelp
            path: artifacts/${{ env.ARTIFACT }}
            retention-days: 7
       - name: Upload artifact
@@ -55,12 +55,12 @@ jobs:
      - name: Download artifact
        uses: actions/download-artifact@v3
        with:
-          name: algolia-indexes
+          names: algolia-indexes webhelp
 
      - name: Unzip artifact
        uses: montudor/action-zip@v1
        with:
-          args: unzip -qq ${{ env.ARTIFACT }} -d algolia-index
+          args: unzip -qq algolia-indexes.zip -d algolia-index
       # Runs a set of commands using the runners shell
      - name: Run a multi-line script
        run: |
