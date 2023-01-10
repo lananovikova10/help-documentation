@@ -4,7 +4,7 @@
 <ihp version="2.0">
     <categories src="c.list"/>
     <vars src="v.list"/>
-    <instance src="hp.tree" web-path="/hp/"/>
+    <instance src="hp.tree"/>
     <topics dir="topics"/>
-    <images dir="images" web-path="/img/"/>
+    <images dir="images" web-path="img"/>
 </ihp>
