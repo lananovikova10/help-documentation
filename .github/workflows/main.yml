@@ -39,7 +39,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
            name: algolia-indexes
-           path: artifacts/algolia-indexes-*.zip
+           path: artifacts/algolia-indexes.zip
            retention-days: 7
            
   publish-indexes:
@@ -55,8 +55,7 @@ jobs:
      - name: Download artifact
        uses: actions/download-artifact@v3
        with:
-          names: algolia-indexes
-          path: algolia-indexes
+          name: algolia-indexes
 
      - name: Unzip artifact
        uses: montudor/action-zip@v1
