@@ -30,7 +30,7 @@ jobs:
            name: artifact
            path: |
               artifacts/${{ env.ARTIFACT }}
-              artifacts/algolia-indexes-*.zip!**
+              artifacts/algolia-indexes-*.zip
            retention-days: 7
 
   deploy:
