@@ -52,17 +52,17 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
      - name: Download artifact
-        uses: actions/download-artifact@v3
-        with:
+       uses: actions/download-artifact@v3
+       with:
           name: algolia-indexes
 
-      - name: Unzip artifact
-        uses: montudor/action-zip@v1
-        with:
+     - name: Unzip artifact
+       uses: montudor/action-zip@v1
+       with:
           args: unzip -qq ${{ env.ARTIFACT }} -d algolia-index
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
+     - name: Run a multi-line script
+       run: |
           env "algolia-key=${'$'}ALGOLIA_KEY" java -jar /opt/builder/help-publication-agent.jar \
           update-index \
           --application-name ${'$'}ALGOLIA_APP_NAME \
