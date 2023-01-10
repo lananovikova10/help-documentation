@@ -6,6 +6,5 @@
     <vars src="v.list"/>
     <instance src="hp.tree" web-path="/hp/"/>
     <topics dir="topics"/>
-    <module name="help"/>
     <images dir="images" version="1.0" web-path="img/"/>
 </ihp>
