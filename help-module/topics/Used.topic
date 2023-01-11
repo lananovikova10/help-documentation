@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://helpserver.labs.jb.gg/help/schemas/mvp/html-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/topic.v2.xsd"
+       id="Used"
+       title="Used ports">
+    <chapter title="Microsoft Windows Server">
+        <p>
+            The following table describes network ports that must be opened to ensure proper communication with Microsoft Windows servers.</p>
+
+        <p>Each Microsoft Windows server that is a backup infrastructure component or a machine for which you enable application-aware processing must have these ports opened. If you want to use the server as a backup infrastructure component, you must also open ports that the component role requires.</p>
+
+        <p>For example, if you assign the role of a backup proxy to your Microsoft Windows server, you must open ports listed below and also ports listed in the Backup Proxy section.</p>
+
+        <p>The Microsoft Windows server that acts as an NFS file share requires network ports listed below and also ports listed in the NFS Backup Repository. The Microsoft Windows server that acts as an SMB file share requires network ports listed below and also ports listed in the SMB Backup Repository.</p>
+
+        <table>
+            <tr>
+                <td>From</td>
+                <td>To</td>
+                <td>Protocol</td>
+                <td>Port</td>
+                <td>Notes</td>
+            </tr>
+            <tr>
+                <td>Backup server</td>
+                <td rowspan="7">Microsoft Windows server</td>
+                <td>TCP</td>
+                <td>445
+                    135</td>
+                <td><p>Port required for deploying Veeam Backup &amp; Replication components.</p>
+                    <p><control>Note:</control> Port 135 is optional to provide faster deployment.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Backup proxy</td>
+                <td>TCP</td>
+                <td>6160</td>
+                <td>Default port used by the Veeam Installer Service.</td>
+            </tr>
+            <tr>
+                <td>Backup repository</td>
+                <td>TCP</td>
+                <td>2500 to 3300
+                    <a anchor="anchor1" summary="This range of ports applies to newly installed Veeam Backup &amp; Replication starting from version 10.0"><format style="superscript">1</format></a>
+                </td>
+                <td>Default range of ports used as data transmission channels and for collecting log files.
+                    For every TCP connection that a job uses, one port from this range is assigned.</td>
+            </tr>
+            <tr>
+                <td>Gateway server</td>
+                <td>TCP</td>
+                <td>6161</td>
+                <td>[For Microsoft Windows servers running the vPower NFS Service] Default port used by the Veeam vPower NFS Service.</td>
+            </tr>
+            <tr>
+                <td>Mount server</td>
+                <td>TCP</td>
+                <td>6162</td>
+                <td>Default port used by the Veeam Data Mover.</td>
+            </tr>
+            <tr>
+                <td>WAN accelerator</td>
+                <td>TCP</td>
+                <td>49152 to 65535 (for Microsoft Windows 2008 and later)</td>
+                <td>Dynamic port range. For more information,
+                    see this <a href="https://support.microsoft.com/kb/929851/en-us">Microsoft KB article</a>.</td>
+            </tr>
+        </table>
+        <p id="anchor1">
+            This range of ports applies to newly installed Veeam Backup &amp; Replication starting from version 10.0, without upgrade from previous versions. If you have upgraded from an earlier version of the product, the range of ports from 2500 to 5000 applies to the already added components.
+        </p>
+    </chapter>
+    <chapter title="Linux server">
+        <p>The following table describes network ports that must be opened to ensure proper communication with Linux servers.</p>
+        <table>
+            <tr>
+                <td>From</td>
+                <td>To</td>
+                <td>Protocol</td>
+                <td>Port</td>
+                <td>Notes</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Backup server</td>
+                <td rowspan="3">Linux server</td>
+                <td>TCP</td>
+                <td>22</td>
+                <td>Port used as a control channel from the console to the target Linux host.</td>
+            </tr>
+            <tr>
+                <td>TCP</td>
+                <td>6162</td>
+                <td>Default port used by the Veeam Data Mover. You can specify a different port while adding the Linux server to the Veeam Backup &amp; Replication infrastructure. Note that you can specify a different port only if there is no previously installed Veeam Data Mover on this Linux server. For more information, see <a href="https://helpcenter.veeam.com/docs/backup/vsphere/linux_server_ssh.html">Specify Credentials and SSH Settings</a>.</td>
+            </tr>
+            <tr>
+                <td>TCP</td>
+                <td>2500 to 33001</td>
+                <td>Default range of ports used as data transmission channels. For every TCP connection that a job uses, one port from this range is assigned.</td>
+            </tr>
+            <tr>
+                <td>Linux server</td>
+                <td>Backup server</td>
+                <td>TCP</td>
+                <td>2500 to 33001</td>
+                <td>Default range of ports used as data transmission channels. For every TCP connection that a job uses, one port from this range is assigned.</td>
+            </tr>
+        </table>
+        <p id="anchor2">This range of ports applies to newly installed Veeam Backup  Replication starting from version 10.0, without upgrade from previous versions. If you have upgraded from an earlier version of the product, the range of ports from 2500 to 5000 applies to the already added components.</p>
+    </chapter>
+    <chapter title="Backup server">
+        <p>The following table describes network ports that must be opened to ensure proper communication of the backup server with backup infrastructure components.
+        </p>
+        <table>
+            <tr>
+                <td>From</td>
+                <td>To</td>
+                <td>Protocol</td>
+                <td>Port</td>
+                <td>Notes</td>
+            </tr>
+            <tr>
+                <td colspan="5"><control>Virtualization Servers</control></td>
+            </tr>
+            <tr>
+                <td rowspan="5">Backup server</td>
+                <td rowspan="2">vCenter Server</td>
+                <td>HTTPS TCP</td>
+                <td>443</td>
+                <td>Default port used for connections to vCenter Server.
+                    If you use vCloud Director, make sure you open port 443 on underlying vCenter Servers.</td>
+            </tr>
+            <tr>
+                <td>HTTPS TCP</td>
+                <td>10443</td>
+                <td>Port used to access vCenter Inventory Service (HTTP or HTTPS) and collect vCenter Server tags.
+                    This port is used for communication with vCenter Server 5.x only.
+                    This port is not required for VMware Cloud on AWS.</td>
+            </tr>
+            <tr>
+                <td rowspan="2">ESXi server</td>
+                <td>HTTPS TCP</td>
+                <td>443</td>
+                <td>Default port used for connections to ESXi host.
+                    This port is not required for VMware Cloud on AWS.</td>
+            </tr>
+            <tr>
+                <td>TCP</td>
+                <td>902</td>
+                <td>Port used for data transfer to ESXi host.
+                    This port is not required for VMware Cloud on AWS.</td>
+            </tr>
+            <tr>
+                <td>vCloud Director</td>
+                <td>HTTPS TCP</td>
+                <td>443</td>
+                <td>Default port used for connections to vCloud Director.</td>
+            </tr>
+            <tr>
+                <td colspan="5"><control>Other Servers</control></td>
+            </tr>
+            <tr>
+                <td rowspan="4">Backup server</td>
+                <td>Microsoft SQL Server hosting the Veeam Backup &amp; Replication configuration database</td>
+                <td>TCP</td>
+                <td>1433</td>
+                <td>Port used for communication with Microsoft SQL Server on which the Veeam Backup &amp; Replication configuration database is deployed (if you use a Microsoft SQL Server default instance).
+                    Additional ports may need to be open depending on your configuration. For more information, see <a href="https://msdn.microsoft.com/en-us/library/cc646023(v=sql.120).aspx#BKMK_ssde">Microsoft Docs</a>.</td>
+            </tr>
+            <tr>
+                <td>DNS server with forward/reverse name resolution of all backup servers</td>
+                <td>UDP</td>
+                <td>53</td>
+                <td>Port used for communication with the DNS Server.</td>
+            </tr>
+            <tr>
+                <td>Veeam Update Notification Server (dev.veeam.com)</td>
+                <td>HTTPS TCP</td>
+                <td>443</td>
+                <td>Default port used to download information about available updates from the Veeam Update Notification Server over the Internet.</td>
+            </tr>
+            <tr>
+                <td>Veeam License Update Server (vbr.butler.veeam.com, autolk.veeam.com)</td>
+                <td>TCP</td>
+                <td>443</td>
+                <td>Default port used for license auto-update.</td>
+            </tr>
+            <tr>
+                <td colspan="5"><control>Backup Server</control></td>
+            </tr>
+            <tr>
+                <td>Backup server</td>
+                <td>Backup server</td>
+                <td>TCP</td>
+                <td>9501</td>
+                <td>Port used locally on the backup server for communication between Veeam Broker Service and Veeam services and components.</td>
+            </tr>
+            <tr>
+                <td>Backup server</td>
+                <td>Backup server</td>
+                <td>TCP</td>
+                <td>6172</td>
+                <td>Port used to provide REST access to the Veeam Backup &amp; Replication database.</td>
+            </tr>
+            <tr>
+                <td colspan="5"><control>Remote Access</control></td>
+            </tr>
+            <tr>
+                <td>Management client PC (remote access)</td>
+                <td>Backup server</td>
+                <td>TCP</td>
+                <td>3389</td>
+                <td>Default port used by the Remote Desktop Services. If you use third-party solutions to connect to the backup server, other ports may need to be open.</td>
+            </tr>
+            <tr>
+                <td colspan="5"><control>REST API</control></td>
+            </tr>
+            <tr>
+                <td>REST client</td>
+                <td>Backup server</td>
+                <td>TCP</td>
+                <td>9419</td>
+                <td>Default port for communication with REST API service.</td>
+            </tr>
+        </table>
+    </chapter>
+    <chapter title="Object Storage Repository">
+        <p>The following table describes network ports and endpoints that must be opened to ensure proper communication with object storage repositories. For more information, see Object Storage Repository.
+        </p>
+        <table>
+            <tr>
+                <td>From</td>
+                <td>To</td>
+                <td>Protocol</td>
+                <td>Port/Endpoint</td>
+                <td>Notes</td>
+            </tr>
+            <tr>
+                <td rowspan="14">Gateway server</td>
+                <td rowspan="4">Amazon S3 object storage</td>
+                <td>TCP</td>
+                <td>443</td>
+                <td rowspan="2">Used to communicate with Amazon S3 object storage.</td>
+            </tr>
+            <tr>
+                <td>HTTPS</td>
+                <td><p><format style="bold">AWS service endpoints:</format></p>
+                    <list>
+                        <li>.amazonaws.com (for both Global and Government regions)</li>
+                        <li>.amazonaws.com.cn (for China region)</li>
+                    </list>
+                    <p>A complete list of connection endpoints can be found in <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region">this Amazon article</a>.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>TCP</td>
+                <td>80</td>
+                <td rowspan="2">Used to verify the certificate status. Consider that certificate verification endpoints (CRL URLs and OCSP servers) are subject to change. The actual list of addresses can be found in the certificate itself.</td>
+            </tr>
+            <tr>
+                <td>HTTP</td>
+                <td><p><format style="bold">Certificate verification endpoints:</format></p>
+                    <list>
+                        <li>*.amazontrust.com</li>
+                    </list>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="4">Microsoft Azure object storage</td>
+                <td>TCP</td>
+                <td>443</td>
+                <td rowspan="2">Used to communicate with Microsoft Azure object storage. Consider that the &lt;xxx&gt; part of the address must be replaced with your actual storage account URL, which can be found in the Azure management portal.</td>
+            </tr>
+            <tr>
+                <td>HTTPS</td>
+                <td><p><format style="bold">Cloud endpoints:</format></p>
+                    <list>
+                        <li>xxx.blob.core.windows.net (for Global region)</li>
+                        <li>xxx.blob.core.chinacloudapi.cn (for China region)</li>
+                        <li>xxx.blob.core.cloudapi.de (for Germany region)</li>
+                        <li>xxx.blob.core.usgovcloudapi.net (for Government region)</li>
+                    </list>
+                </td>
+            </tr>
+            <tr>
+                <td>TCP</td>
+                <td>80</td>
+                <td rowspan="2">
+                    <p>Used to verify the certificate status.</p>
+                    <p>Consider the following:</p>
+                    <list>
+                        <li>Certificate verification endpoints (CRL URLs and OCSP servers) are subject to change.
+                            The actual list of addresses can be found in the certificate itself.</li>
+                        <li>The *.d-trust.net endpoint is used for the Germany region only.
+                        </li>
+                    </list>
+                </td>
+            </tr>
+            <tr>
+                <td>HTTP</td>
+                <td><p><format style="bold">Certificate verification endpoints:</format></p>
+                    <list>
+                        <li>ocsp.digicert.com</li>
+                        <li>ocsp.msocsp.com</li>
+                        <li>.d-trust.net</li>
+                    </list></td>
+            </tr>
+            <tr>
+                <td rowspan="4">Google Cloud storage</td>
+                <td>TCP</td>
+                <td>443</td>
+                <td rowspan="2">Used to communicate with Google Cloud storage.</td>
+            </tr>
+            <tr>
+                <td>HTTPS</td>
+                <td><p><format style="bold">Cloud endpoints: </format></p>
+                    <list>
+                        <li>storage.googleapis.com</li>
+                    </list>
+                    <p>A complete list of connection endpoints can be found in <a href="https://cloud.google.com/storage/docs/request-endpoints">this Google article</a>.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>TCP</td>
+                <td>80</td>
+                <td rowspan="2"><p>Used to verify the certificate status.</p>
+                    <p>Consider that certificate verification endpoints (CRL URLs and OCSP servers) are subject to change. The actual list of addresses can be found in the certificate itself.</p></td>
+            </tr>
+            <tr>
+                <td>HTTP</td>
+                <td><p><format style="bold">Certificate verification endpoints:</format></p>
+                    <list>
+                        <li>ocsp.pki.goog</li>
+                        <li>pki.goog</li>
+                        <li>crl.pki.goog</li>
+                    </list>
+                </td>
+            </tr>
+            <tr>
+                <td>IBM Cloud object storage</td>
+                <td>TCP/HTTPS</td>
+                <td>Customizable and depends on device configuration</td>
+                <td>Used to communicate with IBM Cloud object storage.</td>
+            </tr>
+            <tr>
+                <td>S3 compatible object storage</td>
+                <td>TCP/HTTPS</td>
+                <td>Customizable and depends on device configuration</td>
+                <td>Used to communicate with S3 compatible object storage.</td>
+            </tr>
+        </table>
+    </chapter>
+</topic>
