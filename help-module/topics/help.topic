@@ -4,19 +4,16 @@
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/topic.v2.xsd"
        title="About %product%" id="help">
-    <available-only-for>Supertag</available-only-for>
 
     <chapter title="Introduction">
         <p>This is the documentation for fish, the friendly interactive shell.</p>
 
-        <img src="insertnotebook.gif" alt="Alt"/>
+        <p>A shell is a program that helps you operate your computer by starting other programs. fish offers a command-line interface focused on usability and interactive use.</p>
 
-        <p>A shell is a program that helps you operate your computer by starting other programs. Fish offers a command-line interface focused on usability and interactive use. One more iteration.</p>
-
-        <p>Some <shortcut key="$Copy"/> of the special features of fish are:</p>
+        <p>Some of the special features of fish are:</p>
 
         <list>
-            <li>Extensive UI: Syntax highlighting, Autosuggestions, tab completion, and selection lists that can be
+            <li>Extensive UI: Syntax highlighting, Autosuggestions, tab completion and selection lists that can be
                 navigated and filtered.
             </li>
             <li>No configuration needed: fish is designed to be ready to use immediately, without requiring extensive
@@ -73,8 +70,9 @@
             </li>
         </list>
         <p>
-            Again, substitute the path to fish for <path>/usr/local/bin/fish</path> - see command -s fish inside fish. To change it back to another shell, just substitute /usr/local/bin/fish with /bin/bash, /bin/tcsh or /bin/zsh as appropriate in the steps above.
+        Again, substitute the path to fish for /usr/local/bin/fish - see command -s fish inside fish. To change it back to another shell, just substitute /usr/local/bin/fish with /bin/bash, /bin/tcsh or /bin/zsh as appropriate in the steps above.
         </p>
 
     </chapter>
+
 </topic>
