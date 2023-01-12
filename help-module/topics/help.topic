@@ -6,4 +6,17 @@
        title="About %product%" id="help">
 
     <p>Start typing here...</p>
+    <deflist>
+        <def title="Title 1" switcher-key="ab">
+    <p>paragrapg</p>
+        </def>
+        <def title="Title 2" switcher-key="cd">
+            <p switcher-key="ab">not  a</p>
+        </def>
+        <def title="Title 3">
+            <p>not  a</p>
+        </def>
+    </deflist>
+    <p switcher-key="ab">1</p>
+    <p switcher-key="cd">2</p>
 </topic>
