@@ -5,6 +5,7 @@
     <categories src="c.list"/>
     <vars src="v.list"/>
     <instance src="hp.tree" version="main" web-path="help-documentation"/>
+    <instance src="t.tree" web-path="/t/" version="1.0"/>
     <topics dir="topics"/>
     <images dir="images" version="1.0" web-path="img/"/>
 </ihp>

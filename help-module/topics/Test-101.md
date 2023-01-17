@@ -4,7 +4,17 @@
 
 Merchants set up their store, configure settings, and manage their business using the admin. It includes core aspects of the merchant’s business, including orders, products, and customers.
 
-![Partial screenshots of the admin in mobile and web](mobile-web-admin@2x.png)
+<tabs>
+<tab title="Simple text">
+Text
+</tab>
+
+<tab title="Images and diagrams"> 
+
+![Partial screenshots of the admin in mobile and web](mobile-web-admin@2x.png){ width="50" }
+
+</tab>
+</tabs>
 
 ## What is %product%?
 

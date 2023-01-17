@@ -20,6 +20,8 @@ The Learn Authoring Pack extension includes functionality to put a static markdo
 * Type **Ctrl + Shift + P** to open the Command Palette, then start to type the name of the function until you see it.  Select the function.
 * You can also access **Insert Jupyter notebook** from the the Learn Markdown Authoring menu by typing **Alt + M**.  Scroll down to find **Jupyter Notebook**.
 
+
+
 ## In action
 
 Below is a brief demonstration of this feature.

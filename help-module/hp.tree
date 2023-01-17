@@ -12,4 +12,5 @@
     <toc-element topic="Used.topic"/>
     <toc-element topic="Grammar-and-mechanics.md"/>
     <toc-element topic="How-to-log-in.md"/>
+    <include from="t" element-id="installation-guide"/>
 </instance-profile>

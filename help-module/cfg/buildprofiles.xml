@@ -18,5 +18,10 @@
         <custom-video-cover>video-cover.png</custom-video-cover>
         <og-image>https://i0.wp.com/templeofgeek.com/wp-content/uploads/2019/05/detective_pikachu_01.jpg</og-image>
     </variables>
+    <footer>
+        <social type="twitter" href="https://twitter.com/_Unsolved_"/>
+        <social type="youtube" href="https://www.youtube.com/c/intellijidea"/>
+        <link href="https://blog.jetbrains.com/writerside/">Blog</link>
+    </footer>
     <build-profile instance="hp"/>
 </buildprofiles>
