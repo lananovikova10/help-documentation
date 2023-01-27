@@ -12,7 +12,7 @@
         <primary-color>emerald</primary-color>
         <color-preset>vivid</color-preset>
         <enable-browser-edits>true</enable-browser-edits>
-        <browser-edits-url>https://gitlab.com/docops_/hugo/</browser-edits-url>
+        <browser-edits-url>https://github.com/lananovikova10/help-documentation/edit/main/help-module/</browser-edits-url>
         <config-algolia-index>prod_HELP_DOCUMENTATION</config-algolia-index>
         <config-algolia-id>0J2F033YWG</config-algolia-id>
         <config-algolia-api-key>5c71ca83bb8afeb0507f4da9362b3fa0</config-algolia-api-key>
@@ -20,6 +20,13 @@
         <custom-video-cover>Video-Cover-Templates.png</custom-video-cover>
         <og-image>https://i0.wp.com/templeofgeek.com/wp-content/uploads/2019/05/detective_pikachu_01.jpg</og-image>
     </variables>
+    <footer>
+        <social type="blog" href="https://blog.jetbrains.com/go/">GoLand Blog</social>
+        <social type="twitter" href="https://twitter.com/GoLandIDE">GoLand on Twitter</social>
+        <link href="https://www.jetbrains.com/go/whatsnew/">What's new</link>
+        <link href="https://youtrack.jetbrains.com/issues/GO">Issue tracker</link>
+        <link href="https://intellij-support.jetbrains.com/hc/en-us/requests/new?ticket_form_id=66731">Submit support request</link>
+    </footer>
     <build-profile instance="hp">
         <footer>
 
