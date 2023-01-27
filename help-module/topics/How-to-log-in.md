@@ -23,4 +23,3 @@ Run an infra list to view what you have access to:
 ```bash
 infra list
 ```
-

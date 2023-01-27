@@ -6,4 +6,10 @@
        title="Setup" id="Setup">
 
     <p>Start typing here...</p>
+    <video src="https://youtu.be/AEKtQW93OVg"/>
+    <p>Start typing here...</p>
+    <video src="file_example_MP4_480_1_5MG.mp4"/>
+
+    <img src="insertnotebook.gif" animated="true" alt="Alt"/>
+
 </topic>

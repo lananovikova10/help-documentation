@@ -7,10 +7,10 @@
                  start-page="help.topic">
 
     <toc-element topic="help.topic"/>
+    <toc-element topic="APIs.md"/>
     <toc-element topic="Jupiter.md"/>
     <toc-element topic="Test-101.md"/>
     <toc-element topic="Used.topic"/>
     <toc-element topic="Grammar-and-mechanics.md"/>
     <toc-element topic="How-to-log-in.md"/>
-    <include from="t" element-id="installation-guide"/>
 </instance-profile>

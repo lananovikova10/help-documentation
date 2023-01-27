@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<platforms>
+    <platform id="primary">
+        <use-keymaps>
+            primary_Windows
+        </use-keymaps>
+        <use-keymaps>
+            primary_IntelliJ IDEA Classic (macOS)
+        </use-keymaps>
+        <delimiter>+</delimiter>
+        <src>keymap.xml</src>
+        <directory-separator>\</directory-separator>
+    </platform>
+    <platform id="secondary">
+        <use-keymaps>
+            secondary_macOS
+        </use-keymaps>
+        <use-keymaps>
+            secondary_Emacs
+        </use-keymaps>
+        <src>keymap.xml</src>
+        <directory-separator>/</directory-separator>
+    </platform>
+</platforms>

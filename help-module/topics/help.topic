@@ -4,13 +4,16 @@
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/topic.v2.xsd"
        title="About %product%" id="help">
+    <available-only-for>Supertag</available-only-for>
 
     <chapter title="Introduction">
         <p>This is the documentation for fish, the friendly interactive shell.</p>
 
+        <img src="insertnotebook.gif" alt="Alt"/>
+
         <p>A shell is a program that helps you operate your computer by starting other programs. fish offers a command-line interface focused on usability and interactive use.</p>
 
-        <p>Some of the special features of fish are:</p>
+        <p>Some <shortcut key="Copy"/> of the special features of fish are:</p>
 
         <list>
             <li>Extensive UI: Syntax highlighting, Autosuggestions, tab completion and selection lists that can be

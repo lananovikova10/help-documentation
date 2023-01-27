@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://helpserver.labs.jb.gg/help/schemas/mvp/product-profile.dtd">
+
+<instance-profile id="d"
+                 name="dgdgd"
+                 start-page="dgdgd.topic">
+
+    <toc-element topic="dgdgd.topic"/>
+    <toc-element topic="help.topic"/>
+</instance-profile>

@@ -3,8 +3,7 @@
         SYSTEM "https://helpserver.labs.jb.gg/help/schemas/mvp/html-entities.dtd">
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/topic.v2.xsd"
-       title="Install" id="Install">
+       title="About tst" id="tst">
 
-    <p>Install install.</p>
-
+    <p>Start typing here...</p>
 </topic>

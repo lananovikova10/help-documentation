@@ -1,5 +1,5 @@
+[//]: # (title: Real Title)
 ---
-title: Grammar and mechanics
 description: This guide is to help designers, developers, recruiters, UX-ers, product managers, support advisors, or anyone who writes public-facing text for Shopify.
 icon: GrammarMajor
 keywords:
@@ -19,6 +19,8 @@ keywords:
 - writing public-facing content
 - public-facing content
 ---
+
+### Cool cool cool
 
 ## Basics
 
@@ -450,7 +452,7 @@ Use consistent timestamp formats by following these examples:
 
 ### Currency {id="curr"}
 
-When including currency with a price, the currency comes after the dollar amount. Learn more about [formatting localized currency](#curr).
+When including currency with a price, the currency comes after the dollar amount. Learn more about formatting localized currency.
 
 <!-- dodont -->
 
