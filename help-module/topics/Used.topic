@@ -13,7 +13,8 @@
 
         <p>For example, if you assign the role of a backup proxy to your Microsoft Windows server, you must open ports listed below and also ports listed in the Backup Proxy section.</p>
 
-        <p>The Microsoft Windows server that acts as an NFS file share requires network ports listed below and also ports listed in the NFS Backup Repository. The Microsoft Windows server that acts as an SMB file share requires network ports listed below and also ports listed in the SMB Backup Repository.</p>
+        <p>The Microsoft Windows server that acts as an NFS file share requires network ports listed below and also ports listed in the NFS Backup Repository.
+            The Microsoft Windows server that acts as an SMB file share requires network ports listed below and also ports listed in the SMB Backup Repository.</p>
 
         <table>
             <tr>

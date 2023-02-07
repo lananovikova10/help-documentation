@@ -6,7 +6,12 @@
                  name="help"
                  start-page="help.topic">
 
+    <toc-element topic="Unit-tests.md"/>
     <toc-element topic="help.topic"/>
+    <toc-element topic="How-to-log-out.md"/>
+    <toc-element toc-title="Title">
+        <toc-element topic="Setup.topic"/>
+    </toc-element>
     <toc-element topic="APIs.md"/>
     <toc-element topic="Jupiter.md"/>
     <toc-element topic="Test-101.md"/>
