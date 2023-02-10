@@ -18,6 +18,7 @@ env:
   ALGOLIA_APP_NAME: 0J2F033YWG
   ALGOLIA_INDEX_NAME: prod_HELP_DOCUMENTATION
   ALGOLIA_KEY: ${{ secrets.ALGOLIA_KEY }}
+  ALGOLIA_ARTIFACT: algolia-indexes-HP.zip
   CONFIG_JSON_PRODUCT: help-documentation
   CONFIG_JSON_VERSION: main
 
@@ -39,7 +40,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
            name: algolia-indexes
-           path: artifacts/algolia-indexes-HP.zip
+           path: artifacts/${{ env.ALGOLIA_ARTIFACT }}
            retention-days: 7
            
   publish-indexes:
@@ -57,7 +58,7 @@ jobs:
           name: algolia-indexes
       - uses: montudor/action-zip@v1
         with:
-          args: unzip -qq algolia-indexes-HP.zip -d algolia-indexes
+          args: unzip -qq ${{ env.ALGOLIA_ARTIFACT }} -d algolia-indexes
       - name: Display structure of downloaded files
         run: ls -R    
       - run: |
