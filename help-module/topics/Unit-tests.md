@@ -1,4 +1,5 @@
 # Unit tests
+<available-only-for>Professional</available-only-for>
 
 <deflist product="!db">
 <def title="%NUM%. Editor area">
