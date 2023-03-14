@@ -20,7 +20,7 @@
         <custom-video-cover>Placeholder.png</custom-video-cover>
         <og-image>https://i0.wp.com/templeofgeek.com/wp-content/uploads/2019/05/detective_pikachu_01.jpg</og-image>
         <noindex-content status="release">false</noindex-content>
-        <versions-switcher>https://gist.githubusercontent.com/lananovikova10/c03a67896266b82a226ee42c166bd4f2/raw/5cfcf2204c46539141626dea4a9d33985d0eb144/help-versions.json</versions-switcher>
+        <versions-switcher>https://raw.githubusercontent.com/lananovikova10/versions-json/main/help-versions-docs.json</versions-switcher>
     </variables>
     <build-profile instance="d">
         <variables>
