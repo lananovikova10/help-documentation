@@ -1,5 +1,10 @@
 # Unit tests
+
 <available-only-for>Professional</available-only-for>
+<title switcher-key="a">Title 1
+</title>
+<title switcher-key="b">Title 2</title>
+
 
 <deflist product="!db">
 <def title="%NUM%. Editor area">

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://helpserver.labs.jb.gg/help/schemas/mvp/html-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/topic.v2.xsd"
+       title="Getting started" id="Getting-started">
+
+    <chapter title="What can I do with it?" id="what-can-i-do-with-it">
+        <list style="bullet">
+            <li>
+                <img width="16" style="inline" src="teams.png" type="joined" alt="teams.png"/>
+                <format style="bold"><a href="Test-101.md">Teams</a></format>.
+                Discover the <a href="Test-101.md">teams in your organization,
+                team members</a> and their position in the team.
+            </li>
+            <li>
+                <img width="16" src="projects.png" type="joined" alt="projects.png"/>
+                <format style="bold"><a href="Test-101.md">Projects</a></format>.
+            </li>
+            <li>
+                <img width="18" src="messenger.png" type="joined" alt="messenger.png"/>
+                <format style="bold"><a href="Test-101.md">Chats</a></format>. Communicate with your colleagues privately or in groups.
+                Receive notifications of important events,
+                requests and alerts.
+            </li>
+            <li>
+                <img width="16" src="blog.png" type="joined" alt="blog.png"/>
+                <format style="bold"><a href="Test-101.md">Blog</a></format>.
+                Read and post articles, announcements, and polls.
+            </li>
+            <li>
+                <img width="16" src="my-documents.png" type="joined" alt="my-documents.png"/>
+                <format style="bold"><a href="Test-101.md">Documents</a></format>.
+                Create text documents. Write on your own or share and collaborate.
+                Keep a draft to yourself, publish it to the Blog, or add it to your
+                <a href="Test-101.md">Project Documentation</a>.
+            </li>
+            <li>
+                <img width="18" src="to-do-black.png" type="joined" alt="to-do-black.png"/>
+                <format style="bold"><a href="Test-101.md">To-Do List</a></format>.
+                Manage your daily tasks, write quick notes and reminders. Access this personal list from any device.
+            </li>
+        </list>
+    </chapter>
+</topic>

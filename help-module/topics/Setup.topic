@@ -2,8 +2,8 @@
 <!DOCTYPE topic
         SYSTEM "https://helpserver.labs.jb.gg/help/schemas/mvp/html-entities.dtd">
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/topic.v2.xsd"
-       title="Setup" id="Setup">
+       xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/topic.v2.xsd" id="Setup" switcher-label="title">
+    <title caps="lower">Something CAPS</title>
 
     <p>Start typing here...</p>
     <video src="https://youtu.be/AEKtQW93OVg"/>
@@ -12,5 +12,39 @@
 
     <img src="insertnotebook.gif" animated="true" alt="Alt"/>
     <img src="animation.gif" alt="Animation"/>
+    <tip>
+       Hello <img src="mobile-web-admin@2x.png" width="200" style="inline" alt="Hello"/> Hello
+    </tip>
+    <chapter>
+        <title caps="lower">Something CAPS</title>
+        <p>This chapter describes the answer to the Ultimate Question of Life, the Universe, and Everything.</p>
+        <img src="42.jpeg" alt="Answer"/>
+        <p>When asked to produce The Ultimate Question to go with the answer "42", Deep Thought admits it is not capable of computing that itself, but that it can help to design an even more powerful computer, which can.
+            This new computer will incorporate living beings into the "computational matrix" and will run for ten million years. It is the planet Earth.</p>
+    </chapter>
+    <chapter title="%project_structure% settings" caps="title" id="project-structure-settings">
+        <table>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </table>
+        <deflist>
+            <def title="Title1">
+
+            </def>
+        </deflist>
+    </chapter>
 
 </topic>

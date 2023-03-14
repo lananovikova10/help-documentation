@@ -5,4 +5,12 @@
         <description>Created after removal of "About toc-chunks" from toc-chunks</description>
         <accepts>toc-chunks.html</accepts>
     </rule>
+    <rule id="250caea9">
+        <description>Created after removal of "New cool topic" from help</description>
+        <accepts>New-cool-topic.html</accepts>
+    </rule>
+    <rule id="7f89d7e5">
+        <description>Created after removal of "About Test" from help</description>
+        <accepts>help.html</accepts>
+    </rule>
 </rules>

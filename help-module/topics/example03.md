@@ -1,4 +1,4 @@
-# Word Documents Template
+# Word Imported Doc
 
 Use the Heading 1 style for primary headings so that screen readers can
 identify them as such.
@@ -96,7 +96,7 @@ Once your settings are correct click 'default'.
 
 Click 'yes' on the resulting 'Are your sure' message.
 
-## Title
+## Title {id="123"}
 
 ## To test your new settings
 
@@ -129,7 +129,7 @@ Check the option "**Repeat as header at the top of each page**"
 
   --------------------------------------------------------------------------
 
-## Title
+## Title {id="122"}
 
 ## Images 
 
@@ -148,9 +148,9 @@ Alternative or Alt text is required for all images in a document
 
 -   Click "**OK**".
 
-##  Title
+##  Title {id="121"}
 
-##  Title
+##  Title {id="120"}
 
 ##  Rationale for following Clear Print Guidelines {#rationale-for-following-clear-print-guidelines .Style-Heading-2-+-Not-Italic}
 

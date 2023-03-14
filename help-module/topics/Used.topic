@@ -15,6 +15,7 @@
 
         <p>The Microsoft Windows server that acts as an NFS file share requires network ports listed below and also ports listed in the NFS Backup Repository.
             The Microsoft Windows server that acts as an SMB file share requires network ports listed below and also ports listed in the SMB Backup Repository.</p>
+        <p>A new paragraph.</p>
 
         <table>
             <tr>

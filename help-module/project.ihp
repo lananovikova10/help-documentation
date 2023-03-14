@@ -2,9 +2,12 @@
 <!DOCTYPE ihp SYSTEM "https://helpserver.labs.jb.gg/help/schemas/mvp/ihp.dtd">
 
 <ihp version="2.0">
+    <settings>
+        <default-property element-name="img" property-name="border-effect" value="line"/>
+    </settings>
     <categories src="c.list"/>
     <vars src="v.list"/>
-    <instance src="hp.tree" version="main" web-path="help-documentation"/>
+    <instance src="hp.tree" version="2.0" web-path="help-documentation/2.0"/>
     <instance src="d.tree" web-path="/d/" version="1.0"/>
     <topics dir="topics"/>
     <images dir="images" version="1.0" web-path="img/"/>
