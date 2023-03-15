@@ -7,7 +7,7 @@
     </settings>
     <categories src="c.list"/>
     <vars src="v.list"/>
-    <instance src="hp.tree" version="2.0" web-path="/help-documentation/2.0"/>
+    <instance src="hp.tree" version="2.0" web-path="/2.0"/>
     <instance src="d.tree" web-path="/d/" version="main"/>
     <topics dir="topics"/>
     <images dir="images" version="1.0" web-path="img/"/>
