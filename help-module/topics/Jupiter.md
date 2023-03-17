@@ -53,6 +53,7 @@ If a path is not returned, install `jupyter`:
 ```bash
 pip install --upgrade jupyter
 ```
+{show-white-spaces="true"}
 
 Once both Python and `jupyter` are installed, install `nbconvert`:
 
