@@ -7,6 +7,8 @@
                  start-page="help.topic">
 
     <toc-element topic="Unit-tests.md"/>
+    <toc-element topic="Configure-JVM-options.topic"/>
+    <toc-element topic="djggggggg.topic"/>
     <toc-element topic="example03.md"/>
     <toc-element topic="help.topic"/>
     <toc-element topic="How-to-log-out.md"/>

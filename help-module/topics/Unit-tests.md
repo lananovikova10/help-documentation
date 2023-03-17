@@ -53,3 +53,11 @@ displays active red, yellow, white, green and blue navigation stripes that let y
 the erroneous code, changed lines, search results, or TODO items.
 </def>
 </deflist>
+
+## Chapter with default id
+
+Some text.
+
+## Chapter with another id
+
+<include from="Unit-tests.md" element-id="chapter-with-default-id"/>
