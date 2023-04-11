@@ -10,4 +10,14 @@
         <a href="Configure-JVM-options.topic" anchor="chapter-with-default-id"></a>
         <include from="Unit-tests.md" element-id="chapter-with-default-id"/>
     </chapter>
+    <seealso style="cards">
+        <category ref="possible_parents">
+            <a href="How-to-log-in.md"/>
+            <a href="https://google.com" description="Search the Web">Google</a>
+        </category>
+        <category ref="see_also">
+            <a href="Configure-JVM-options.topic" description="Read more about procedures"/>
+            <a href="dgdgd.topic"/>
+        </category>
+    </seealso>
 </topic>

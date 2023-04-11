@@ -1,6 +1,17 @@
 # Unit tests
 <available-only-for>Professional</available-only-for>
 
+
+1. item1
+2. item2
+   1. item2a
+   2. item2b
+
+   {style="alpha-lower"}
+3. item3
+
+{sorted="desc"}
+
 <deflist product="!db">
 <def title="%NUM%. Editor area">
 Use this area to type and edit your source code. The editor suggests numerous coding assistance facilities.
@@ -61,3 +72,28 @@ Some text.
 ## Chapter with another id
 
 <include from="Unit-tests.md" element-id="chapter-with-default-id"/>
+
+<procedure title="Deploying Theme Plugin">
+
+1. Build the theme by invoking <ui-path>Build | Build Project</ui-path> or <ui-path>Build | Build Module $MODULE_NAME$</ui-path>.
+2. Create the deployment artifact by invoking <ui-path>Build | Prepare Plugin Module $MODULE_NAME$ for Deployment</ui-path>.<br/>
+ The resulting theme JAR file will be created in the project or module directory.<br/>
+ In the case of developing a regular plugin, and it specifies additional dependencies, a&nbsp;ZIP archive is created, including all the plugin libraries.
+3. [Install](https://www.jetbrains.com/help/idea/managing-plugins.html#installing-plugins-from-disk) the newly created JAR or ZIP file from disk.
+4. Click the <control>Apply</control> button.
+5. Select your theme in <ui-path>Preferences | Appearance & Behavior | Appearance</ui-path> and apply the changes.
+
+{style="alpha-lower"}
+
+</procedure>
+
+1. First item
+2. Second item
+   1. First indented
+   2. Second indented
+
+   {style="alpha-lower"}
+3. Third item
+4. Fourth item
+
+{start="2"}

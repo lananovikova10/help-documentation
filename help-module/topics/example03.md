@@ -5,13 +5,25 @@ identify them as such.
 
 If not already, manually change your heading 1 style to be:
 
-\- sans serif (e.g. Arial, Verdana, Trebuchet or Calibri),
+\- sans serif (e.g. Arial, Verdana, Trebuchet or Calibri), BI 
 
 \- 16 pt, and
 
 \- Bold
 
 Then set this formatting as your default for this style.
+
+Title <control>Title</control> [img](Hogwarts-Legacy_20230209152050.jpg)
+: Def
+
+<procedure>
+<step>
+</step>
+</procedure>
+
+<procedure title="" id="">
+    <step></step>
+</procedure>
 
 ## Sub Headings:  {#sub-headings .Style-Heading-2-+-Not-Italic-Before:--0-pt-After:--0-pt-Line-spa...}
 
@@ -55,6 +67,10 @@ They should be:
 -   Left aligned instead of justified
 
 Then set this formatting as your default for this style.
+
+<list style="a" sorted="asc">
+
+</list>
 
 **Your document should also:**
 

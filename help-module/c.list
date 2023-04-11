@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE vars SYSTEM "https://helpserver.labs.jb.gg/help/schemas/mvp/vars.dtd">
-<vars>
-
-</vars>
+<!DOCTYPE categories SYSTEM "https://helpserver.labs.jb.gg/help/schemas/mvp/categories.dtd">
+<categories>
+    <category id="possible_parents" name="Possible parents" order="1"/>
+    <category id="see_also" name="See also" order="2"/>
+</categories>
