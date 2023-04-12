@@ -8,14 +8,14 @@
         <config-feedbackRequireEmail>true</config-feedbackRequireEmail>
         <config-feedback-url>https://support.jetbrains.com</config-feedback-url>
         <config-sideblocks>true</config-sideblocks>
-        <config-search-scopes-provider>https://www.jetbrains.com/search/json/</config-search-scopes-provider>
+        <search-scopes-provider>https://www.jetbrains.com/search/json/</search-scopes-provider>
         <primary-color>emerald</primary-color>
         <color-preset>vivid</color-preset>
         <enable-browser-edits>true</enable-browser-edits>
         <browser-edits-url>https://github.com/lananovikova10/help-documentation/edit/main/help-module/</browser-edits-url>
-        <config-algolia-index>prod_HELP_DOCUMENTATION</config-algolia-index>
-        <config-algolia-id>0J2F033YWG</config-algolia-id>
-        <config-algolia-api-key>5c71ca83bb8afeb0507f4da9362b3fa0</config-algolia-api-key>
+        <algolia-index>prod_HELP_DOCUMENTATION</algolia-index>
+        <algolia-id>0J2F033YWG</algolia-id>
+        <algolia-api-key>5c71ca83bb8afeb0507f4da9362b3fa0</algolia-api-key>
         <header-logo>cwm.svg</header-logo>
         <custom-video-cover>Placeholder.png</custom-video-cover>
         <og-image>https://i0.wp.com/templeofgeek.com/wp-content/uploads/2019/05/detective_pikachu_01.jpg</og-image>
