@@ -30,6 +30,8 @@ jobs:
         uses: actions/checkout@v3
       - name: Build Writerside docs using Docker
         uses: JetBrains/writerside-github-action@v2
+        with:
+          docker-tag: '2.1.984'
       - name: Check Docker output
         run: |
           if [[ $(docker logs $(docker ps -q)) == *"Test failed"* ]]; then
