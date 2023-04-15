@@ -31,7 +31,7 @@ jobs:
       - name: Build Writerside docs using Docker
         uses: JetBrains/writerside-github-action@v2
         with:
-          docker-version: '2.1.1198'
+          docker_version: '2.1.1198'
       - name: Check Docker output
         run: |
           if [[ $(docker logs $(docker ps -q)) == *"Test failed"* ]]; then
