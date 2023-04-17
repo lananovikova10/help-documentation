@@ -3,6 +3,11 @@ name: Build docs
 on:
   push:
     branches: ["main"]
+  workflow_call:
+    inputs:
+        docker_version:
+          type: string
+          default: 2.1.1256-p3333
 
   workflow_dispatch:
   
@@ -21,7 +26,6 @@ env:
   ALGOLIA_ARTIFACT: algolia-indexes-HP.zip
   CONFIG_JSON_PRODUCT: hp
   CONFIG_JSON_VERSION: main
-  INPUT_DOCKER_VERSION: 2.1.1198
 
 jobs:
   build-job:
@@ -32,7 +36,7 @@ jobs:
       - name: Build Writerside docs using Docker
         uses: JetBrains/writerside-github-action@v2
         with:
-          docker_version: ${{ env.INPUT_DOCKER_VERSION }}
+          docker_version: 2.1.1256-p3333
       - name: Check Docker output
         run: |
           if [[ $(docker logs $(docker ps -q)) == *"Test failed"* ]]; then
