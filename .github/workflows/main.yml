@@ -3,11 +3,6 @@ name: Build docs
 on:
   push:
     branches: ["main"]
-  workflow_call:
-    inputs:
-        docker_version:
-          type: string
-          default: 2.1.1256-p3333
 
   workflow_dispatch:
   
@@ -33,10 +28,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Build Writerside docs using Docker
-        uses: JetBrains/writerside-github-action@v2
-        with:
-          docker_version: 2.1.1256-p3333
+      - name: Build X docs using Docker
+        uses: lananovikova10/writerside-docker-action@v1.3
+        with: 
+          docker-version: 2.1.1198 
       - name: Check Docker output
         run: |
           if [[ $(docker logs $(docker ps -q)) == *"Test failed"* ]]; then
