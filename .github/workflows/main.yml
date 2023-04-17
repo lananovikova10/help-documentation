@@ -31,7 +31,7 @@ jobs:
       - name: Build X docs using Docker
         uses: lananovikova10/writerside-docker-action@v1.3
         with: 
-          docker-version: 2.1.1198 
+          docker-version: 2.1.1210-p3258 
       - name: Check Docker output
         run: |
           if [[ $(docker logs $(docker ps -q)) == *"Test failed"* ]]; then
