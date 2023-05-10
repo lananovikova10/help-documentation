@@ -2,10 +2,10 @@ name: Build docs
 
 on:
   push:
-    branches: ["main"]
+    branches: ["1.0"]
 
   workflow_dispatch:
-  
+
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
@@ -28,10 +28,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Build X docs using Docker
-        uses: lananovikova10/writerside-docker-action@v1.4
-        with: 
-          docker_version: '2.1.1210-p3258' 
+      - name: Build Writerside docs using Docker
+        uses: JetBrains/writerside-github-action@v2
+        with:
+          docker_version: 2.1.1340-p3510
       - name: Check Docker output
         run: |
           if [[ $(docker logs $(docker ps -q)) == *"Test failed"* ]]; then
@@ -39,20 +39,20 @@ jobs:
             exit 1
           fi
         if: steps.docker.outcome == 'success'
-        
+
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
-           name: webhelp
-           path: artifacts/${{ env.ARTIFACT }}
-           retention-days: 7
+          name: webhelp
+          path: artifacts/${{ env.ARTIFACT }}
+          retention-days: 7
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
-           name: algolia-indexes
-           path: artifacts/${{ env.ALGOLIA_ARTIFACT }}
-           retention-days: 7
-           
+          name: algolia-indexes
+          path: artifacts/${{ env.ALGOLIA_ARTIFACT }}
+          retention-days: 7
+
   publish-indexes:
     # The type of runner that the job will run on
     needs: build-job
@@ -70,7 +70,7 @@ jobs:
         with:
           args: unzip -qq ${{ env.ALGOLIA_ARTIFACT }} -d algolia-indexes
       - name: Display structure of downloaded files
-        run: ls -R    
+        run: ls -R
       - run: |
           env "algolia-key=${{env.ALGOLIA_KEY}}" java -jar /opt/builder/help-publication-agent.jar \
           update-index \
@@ -80,11 +80,11 @@ jobs:
           --version ${{env.CONFIG_JSON_VERSION}} \
           --index-directory algolia-indexes/ \
           2>&1 | tee algolia-update-index-log.txt
-          
+
   deploy:
     environment:
-        name: github-pages
-        url: ${{ steps.deployment.outputs.page_url }}
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     needs: build-job
     runs-on: ubuntu-latest
     steps:
@@ -105,4 +105,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
-          
