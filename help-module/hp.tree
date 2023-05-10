@@ -6,6 +6,7 @@
                  name="help"
                  start-page="help.topic">
 
+    <toc-element topic="dgdgd.topic"/>
     <toc-element topic="Unit-tests.md"/>
     <toc-element topic="Configure-JVM-options.topic"/>
     <toc-element topic="djggggggg.topic"/>

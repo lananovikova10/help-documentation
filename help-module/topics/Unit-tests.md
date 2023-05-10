@@ -97,3 +97,5 @@ Some text.
 4. Fourth item
 
 {start="2"}
+
+Autotests are important for the success of checking the project validity. The autotests are executed by the runner so tha

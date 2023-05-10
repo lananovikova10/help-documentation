@@ -8,7 +8,21 @@
     <p>Start typing here...</p>
     <chapter title="Chapter with default id" id="chapter-with-default-id">
         <a href="Configure-JVM-options.topic" anchor="chapter-with-default-id"></a>
-        <include from="Unit-tests.md" element-id="chapter-with-default-id"/>
+        <p>
+            Autotest is an important part of the development process.
+            Developing autotests is no different from developing software.
+            Therefore, it’s vital to approach it with the same amount of attention and diligence.
+        </p>
+        <p>
+            Autotests are designed to help teams test faster and release new functionality more often.
+            While it takes from two to four days to test a piece
+        </p>
+        <p>
+            In the case of manual testing, all verifications are performed by QA engineers who are in charge of product quality. They take on the role of users, simulating situations according to the task requirements and recording the results. Some parts of the functionality might work incorrectly. When a manual tester finds these defects, they create a document describing the problem, or the bug, and pass it on to a software developer. After the bug is fixed, the QA engineer rechecks the functionality.
+        </p>
+        <p>
+            Autotests are an important for the process of checking the
+        </p>
     </chapter>
     <seealso style="cards">
         <category ref="possible_parents">
@@ -17,7 +31,7 @@
         </category>
         <category ref="see_also">
             <a href="Configure-JVM-options.topic" description="Read more about procedures"/>
-            <a href="dgdgd.topic"/>
+            <a href="dgdgd.topic" nullable="true"/>
         </category>
     </seealso>
 </topic>
