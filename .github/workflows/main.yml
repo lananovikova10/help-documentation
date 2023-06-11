@@ -28,18 +28,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Build X docs using Docker
-        uses: lananovikova10/writerside-docker-action@v1.4
+      - name: Build docs using Docker
+        uses: JetBrains/writerside-github-action@v3
         with: 
-          docker_version: '2.1.1210-p3258' 
-      - name: Check Docker output
-        run: |
-          if [[ $(docker logs $(docker ps -q)) == *"Test failed"* ]]; then
-            echo "Test failed"
-            exit 1
-          fi
-        if: steps.docker.outcome == 'success'
-        
+          docker_version: '2.1.1210-p3258'
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
