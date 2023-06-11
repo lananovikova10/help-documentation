@@ -5,7 +5,6 @@
        xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/topic.v2.xsd"
        title="Configure JVM options " id="Configure-JVM-options">
 
-    <p>Start typing here...</p>
     <chapter title="Chapter with default id" id="chapter-with-default-id">
         <a href="Configure-JVM-options.topic" anchor="chapter-with-default-id"></a>
         <p>
@@ -21,7 +20,7 @@
             In the case of manual testing, all verifications are performed by QA engineers who are in charge of product quality. They take on the role of users, simulating situations according to the task requirements and recording the results. Some parts of the functionality might work incorrectly. When a manual tester finds these defects, they create a document describing the problem, or the bug, and pass it on to a software developer. After the bug is fixed, the QA engineer rechecks the functionality.
         </p>
         <p>
-            Autotests are an important for the process of checking the
+            Autotests are an important for the process of checking the project validity.
         </p>
     </chapter>
     <seealso style="cards">
