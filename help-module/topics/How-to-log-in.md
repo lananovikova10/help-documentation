@@ -23,7 +23,8 @@ Run an infra list to view what you have access to:
 ```bash
 infra list
 ```
-{id="navigating-between-editor-tabs"}
+
+4. Finish.
 
 <table switcher-key="a">
 <tr><td>Item 1</td><td>Item 3</td></tr>
