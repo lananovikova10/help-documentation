@@ -34,4 +34,9 @@
         <link href="https://youtrack.jetbrains.com/issues/GO">Issue tracker</link>
         <link href="https://intellij-support.jetbrains.com/hc/en-us/requests/new?ticket_form_id=66731">Submit support request</link>
     </footer>
+    <build-profile instance="hp">
+        <variables>
+            <noindex-content>true</noindex-content>
+        </variables>
+    </build-profile>
 </buildprofiles>

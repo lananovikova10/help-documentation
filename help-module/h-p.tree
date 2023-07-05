@@ -2,7 +2,7 @@
 <!DOCTYPE instance-profile
         SYSTEM "https://helpserver.labs.jb.gg/help/schemas/mvp/product-profile.dtd">
 
-<instance-profile id="hp"
+<instance-profile id="h-p"
                  name="help"
                  start-page="help.topic">
 
@@ -10,12 +10,14 @@
     <toc-element topic="Unit-tests.md"/>
     <toc-element topic="Configure-JVM-options.topic"/>
     <toc-element topic="djggggggg.topic"/>
+    <toc-element topic="New-super-toopic.md"/>
     <toc-element topic="example03.md"/>
     <toc-element topic="help.topic"/>
     <toc-element topic="How-to-log-out.md"/>
     <toc-element toc-title="Title">
         <toc-element topic="Setup.topic"/>
     </toc-element>
+    <include from="ar" element-id="apr"/>
     <toc-element topic="APIs.md"/>
     <toc-element topic="Jupiter.md"/>
     <toc-element topic="Test-101.md"/>
