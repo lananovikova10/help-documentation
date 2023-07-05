@@ -5,4 +5,8 @@
         <description>Created after removal of "About toc-chunks" from toc-chunks</description>
         <accepts>toc-chunks.html</accepts>
     </rule>
+    <rule id="14f28647">
+        <description>Created after removal of "Real Title" from help</description>
+        <accepts>Grammar-and-mechanics.html</accepts>
+    </rule>
 </rules>
