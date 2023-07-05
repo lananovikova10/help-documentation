@@ -13,7 +13,7 @@ permissions:
   id-token: write
 
 env:
-  PRODUCT: help-module/hp
+  PRODUCT: help-module/h-p
   ARTIFACT: webHelpHP2-all.zip
   ALGOLIA_APP_NAME: 0J2F033YWG
   ALGOLIA_INDEX_NAME: prod_HELP_DOCUMENTATION
