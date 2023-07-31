@@ -9,4 +9,8 @@
         <description>Created after removal of "Real Title" from help</description>
         <accepts>Grammar-and-mechanics.html</accepts>
     </rule>
+    <rule id="325fd97c">
+        <description>Created after removal of "issues" from API Reference</description>
+        <accepts>issues.html</accepts>
+    </rule>
 </rules>

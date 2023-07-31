@@ -8,7 +8,6 @@
 
     <toc-element topic="api-reference.md" id="apr">
         <toc-element topic="children.md"/>
-        <toc-element topic="issues.md"/>
         <toc-element topic="mirrors.md"/>
         <toc-element topic="payments.md"/>
         <toc-element topic="pets.md"/>

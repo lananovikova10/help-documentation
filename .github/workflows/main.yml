@@ -13,7 +13,7 @@ permissions:
   id-token: write
 
 env:
-  PRODUCT: help-module/h-p
+  INSTANCE: help-module/h-p
   ARTIFACT: webHelpHP2-all.zip
   ALGOLIA_APP_NAME: 0J2F033YWG
   ALGOLIA_INDEX_NAME: prod_HELP_DOCUMENTATION
@@ -30,11 +30,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: Build docs using Docker
-        uses: JetBrains/writerside-github-action@v3
-#        with:
-#          instance: ${{ env.INSTANCE }}
-#          artifact: ${{ env.ARTIFACT }}
-#          docker-version: ${{ env.DOCKER_VERSION }}
+        uses: JetBrains/writerside-github-action@v4
+        with:
+          instance: ${{ env.INSTANCE }}
+          artifact: ${{ env.ARTIFACT }}
+          docker-version: ${{ env.DOCKER_VERSION }}
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
