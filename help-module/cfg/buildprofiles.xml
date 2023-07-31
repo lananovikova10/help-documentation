@@ -4,11 +4,6 @@
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <variables>
         <download-page/>
-
-        <config-feedbackRequireEmail>true</config-feedbackRequireEmail>
-        <config-feedback-url>https://support.jetbrains.com</config-feedback-url>
-        <config-sideblocks>true</config-sideblocks>
-        <search-scopes-provider>https://www.jetbrains.com/search/json/</search-scopes-provider>
         <primary-color>emerald</primary-color>
         <color-preset>vivid</color-preset>
         <enable-browser-edits>true</enable-browser-edits>
