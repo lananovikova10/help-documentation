@@ -16,14 +16,10 @@ Then set this formatting as your default for this style.
 Title <control>Title</control> [img](Hogwarts-Legacy_20230209152050.jpg)
 : Def
 
-<procedure>
-<step>
-</step>
-</procedure>
 
-<procedure title="" id="">
-    <step></step>
-</procedure>
+```
+```
+{src="Program.cs" include-symbol="Program"}
 
 ## Sub Headings:  {#sub-headings .Style-Heading-2-+-Not-Italic-Before:--0-pt-After:--0-pt-Line-spa...}
 

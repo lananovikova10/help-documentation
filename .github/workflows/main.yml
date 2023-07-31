@@ -21,6 +21,7 @@ env:
   ALGOLIA_ARTIFACT: algolia-indexes-HP.zip
   CONFIG_JSON_PRODUCT: h-p
   CONFIG_JSON_VERSION: main
+  DOCKER_VERSION: 2.1.1479-p3869
 
 jobs:
   build-job:
@@ -29,9 +30,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: Build docs using Docker
-        uses: JetBrains/writerside-github-action@v3
-#        with:
-#          docker_version: '2.1.1210-p3258'
+        uses: JetBrains/writerside-github-action@v4
+        with:
+          instance: ${{ env.INSTANCE }}
+          artifact: ${{ env.ARTIFACT }}
+          docker-version: ${{ env.DOCKER_VERSION }}
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
