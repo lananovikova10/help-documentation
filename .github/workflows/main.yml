@@ -21,7 +21,7 @@ env:
   ALGOLIA_ARTIFACT: algolia-indexes-HP.zip
   CONFIG_JSON_PRODUCT: h-p
   CONFIG_JSON_VERSION: main
-  DOCKER_VERSION: 2.1.1479-p3869
+  DOCKER_VERSION: 2.1.1482-p3879
 
 jobs:
   build-job:
