@@ -24,7 +24,7 @@ env:
   DOCKER_VERSION: 2.1.1482-p3879
 
 jobs:
-  build-job:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
