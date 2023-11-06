@@ -8,7 +8,7 @@
         <config-feedbackRequireEmail>true</config-feedbackRequireEmail>
         <config-feedback-url>https://support.jetbrains.com</config-feedback-url>
         <config-sideblocks>true</config-sideblocks>
-        <config-search-scopes-provider>https://www.jetbrains.com/search/json/</config-search-scopes-provider>
+        <web-root>https://domain.com</web-root>
         <primary-color>emerald</primary-color>
         <color-preset>vivid</color-preset>
         <config-algolia-index>prod_HELP_DOCUMENTATION</config-algolia-index>
