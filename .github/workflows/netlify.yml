@@ -2,9 +2,11 @@ name: Build documentation
 
 on:
   push:
-  # To trigger the workflow once you push to the `main` branch
-  # Replace `main` with your branch’s name
-    branches: ["2.0"]
+    # To trigger the workflow once you push to the `main` branch
+    # Replace `main` with your branch’s name
+    branches:
+      - '1.0'
+      - '2.0'
   # Specify to run a workflow manually from the Actions tab on GitHub
   workflow_dispatch:
 
@@ -22,14 +24,14 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      
+
       - name: Build Writerside docs using Docker
         uses: JetBrains/writerside-github-action@v4
         with:
           instance: ${{ env.INSTANCE }}
           artifact: ${{ env.ARTIFACT }}
           docker-version: ${{ env.DOCKER_VERSION }}
-      
+
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
@@ -52,6 +54,6 @@ jobs:
       - name: Deploy to Netlify
         uses: jsmrcaga/action-netlify-deploy@v1.1.0
         with:
-            NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-            NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-            NETLIFY_DEPLOY_TO_PROD: true
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_DEPLOY_TO_PROD: true
