@@ -5,8 +5,8 @@ on:
     # To trigger the workflow once you push to the `main` branch
     # Replace `main` with your branch’s name
     branches:
-      - '2.0'
       - '1.0'
+      - '2.0'
   # Specify to run a workflow manually from the Actions tab on GitHub
   workflow_dispatch:
 
@@ -51,9 +51,9 @@ jobs:
         uses: montudor/action-zip@v1
         with:
           args: unzip -qq ${{ env.ARTIFACT }} -d build
-      - name: Deploy to Netlify - 1.0 Branch (to /old URL)
-        if: github.ref == 'refs/heads/1.0'
-        run: |
-          npm install -g netlify-cli
-          netlify deploy --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} --site ${{ secrets.NETLIFY_SITE_ID }} --prod --dir=build/1.0 --message "Deploying to /old for 1.0 branch"
-          netlify deploy --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} --site ${{ secrets.NETLIFY_SITE_ID }} --prod --dir=build/1.0 --message "Deploying to /old for 1.0 branch" --alias old
+      - name: Deploy to Netlify
+        uses: jsmrcaga/action-netlify-deploy@v1.1.0
+        with:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_DEPLOY_TO_PROD: true
