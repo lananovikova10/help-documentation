@@ -53,10 +53,7 @@ jobs:
           args: unzip -qq ${{ env.ARTIFACT }} -d build
       - name: Deploy to Netlify - 1.0 Branch (to /old URL)
         if: github.ref == 'refs/heads/1.0'
-        uses: jsmrcaga/action-netlify-deploy@v1.1.0
-        with:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          NETLIFY_DEPLOY_TO_PROD: true
-          NETLIFY_DIR: build/1.0    # Change this to your specific directory
-          NETLIFY_DEPLOY_PATH: '/old'  # Set the deploy path to /old
+        run: |
+          npm install -g netlify-cli
+          netlify deploy --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} --site ${{ secrets.NETLIFY_SITE_ID }} --prod --dir=build/1.0 --message "Deploying to /old for 1.0 branch"
+          netlify deploy --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} --site ${{ secrets.NETLIFY_SITE_ID }} --prod --dir=build/1.0 --message "Deploying to /old for 1.0 branch" --alias old
