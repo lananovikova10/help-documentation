@@ -3,7 +3,9 @@
 <buildprofiles xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/build-profiles.xsd"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <variables>
-        <download-page/>
+        <download-title>Play</download-title>
+        <download-page>https://en.savefrom.net/391GA/</download-page>
+        <showDownloadButton>true</showDownloadButton>
 
         <config-feedbackRequireEmail>true</config-feedbackRequireEmail>
         <config-feedback-url>https://support.jetbrains.com</config-feedback-url>

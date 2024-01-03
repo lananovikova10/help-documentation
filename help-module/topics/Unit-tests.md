@@ -5,6 +5,12 @@
 </title>
 <title switcher-key="b">Title 2</title>
 
+The linear relationship in linear regression is often represented as:
+<code-block lang="tex">
+\begin{equation}
+y = mx + b
+\end{equation}
+</code-block>
 
 <deflist product="!db">
 <def title="%NUM%. Editor area">
