@@ -36,9 +36,7 @@
     <chapter title="Problems with the Guide" id="problems-with-the-guide" switcher-key="English">
         <p>If you're having problems with the guide itself, such as missing, incorrect, or confusing content, please <a
                 href="https://youtrack.jetbrains.com/newIssue?project=IJSDK&amp;clearDraft=true&amp;c=">raise an issue
-            on YouTrack</a>.
-            If the problem is easily solved, you can also submit a <a href="intellij-sdk-docs-original_CONTRIBUTING.md">Pull
-                Request</a>.</p>
+            on YouTrack</a>.</p>
         <p>If you want to report (smaller) issues for a
             <emphasis>specific</emphasis>
             page, you can also use
@@ -65,7 +63,6 @@
     <chapter title="本指南的问题" id="problems-with-the-guide-CN" switcher-key="Chinese">
         <p>如果你在使用本指南的时候遇到问题，例如内容缺失，错误或者内容混乱，请在 <a
                 href="https://youtrack.jetbrains.com/newIssue?project=IJSDK&amp;clearDraft=true&amp;c=">YouTrack上提交问题</a>。如果问题很容易得到解决，你也可以提交
-            <a href="intellij-sdk-docs-original_CONTRIBUTING.md">拉取请求</a>。
         </p>
 
         <p>
@@ -85,7 +82,7 @@
 
     <chapter title="Problems with Code - Support Issues" id="problems-with-code-support-issues" switcher-key="English">
         <tip>
-            <p>Please see <a href="faq.md">Plugin Development FAQ</a> and <a href="explore_api.md">Explore the IntelliJ
+            <p>Please see <a href="APIs.md">Plugin Development FAQ</a> and <a href="APIs.md">Explore the IntelliJ
                 Platform API</a> for tips &amp; tricks.</p>
         </tip>
         <p>For questions and problems related to plugin development itself (rather than the content of this guide), you
@@ -107,7 +104,7 @@
     <chapter title="代码方面的问题-支持问题" id="problems-with-code-support-issues-CN" switcher-key="Chinese">
 
         <p>
-            请参考 <a href="faq.md">插件开发常见问题问答</a> 和 <a href="explore_api.md">探索 IntelliJ Platform API</a>
+            请参考 <a href="faq.md">插件开发常见问题问答</a> 和 <a href="APIs.md">探索 IntelliJ Platform API</a>
             来获取相关技巧和窍门。
             对于与插件开发本身有关的问题和难题（和本指南内容无关），你有几个选择：
             JetBrains Platform Slack上的#intellij-platform — 这个聊天室是讨论有关扩展JetBrains产品问题的好地方，解答来自JetBrains团队成员和社区成员。

@@ -1,0 +1,3 @@
+# faq
+
+Start typing here...

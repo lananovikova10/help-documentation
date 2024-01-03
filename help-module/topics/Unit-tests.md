@@ -50,7 +50,6 @@ pressed, allows navigating to any part of the file path, through opening it in a
 <li><a href="How-to-log-in.md" anchor="splitting-and-unsplitting-editor-window">Manage groups of tabs.</a></li>
 <li><a href="How-to-log-in.md" anchor="navigating-between-editor-tabs">Navigate between tabs.</a></li>
 <li>Move to a changelist.</li>
-<li><a href="Grammar-and-mechanics.md">Run</a>, or <a href="Jupiter.md">debug</a></li>
 </list>
 <p>
 By default, the tab headers appear at the top of the editor,

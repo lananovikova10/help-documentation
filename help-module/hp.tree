@@ -9,7 +9,7 @@
     <toc-element topic="Unit-tests.md"/>
     <toc-element topic="help.topic"/>
     <toc-element topic="getting_help.topic"/>
-    <toc-element topic="Section-Starting-Page.topic"/>
+    <toc-element topic="faq.md"/>
     <toc-element toc-title="Title">
         <toc-element topic="Setup.topic"/>
         <toc-element topic="Getting-started.topic"/>
@@ -23,5 +23,4 @@
         <toc-element topic="How-to-log-out.md"/>
     </toc-element>
     <toc-element topic="Used.topic"/>
-    <toc-element topic="Grammar-and-mechanics.md"/>
 </instance-profile>

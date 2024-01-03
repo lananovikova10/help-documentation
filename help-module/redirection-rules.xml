@@ -17,4 +17,12 @@
         <description>Created after removal of "Word Imported Doc" from help</description>
         <accepts>example03.html</accepts>
     </rule>
+    <rule id="eedc122">
+        <description>Created after removal of "Real Title" from help</description>
+        <accepts>Grammar-and-mechanics.html</accepts>
+    </rule>
+    <rule id="4076d4c8">
+        <description>Created after removal of "Section Starting Page" from help</description>
+        <accepts>Section-Starting-Page.html</accepts>
+    </rule>
 </rules>
