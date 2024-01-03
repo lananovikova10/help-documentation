@@ -27,7 +27,7 @@ env:
   ALGOLIA_INDEX_NAME: prod_HELP_DOCUMENTATION
   ALGOLIA_KEY: ${{ secrets.ALGOLIA_KEY }}
   CONFIG_JSON_PRODUCT: help-documentation
-  CONFIG_JSON_VERSION: main
+  CONFIG_JSON_VERSION: 2.0
 
 jobs:
   build:
