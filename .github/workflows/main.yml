@@ -21,27 +21,30 @@ env:
   ALGOLIA_ARTIFACT: algolia-indexes-HP.zip
   CONFIG_JSON_PRODUCT: help-documentation
   CONFIG_JSON_VERSION: main
+  DOCKER_VERSION: 232.10275
 
 jobs:
-  build-job:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+
       - name: Build Writerside docs using Docker
         uses: JetBrains/writerside-github-action@v4
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
         with:
-           name: webhelp
-           path: artifacts/${{ env.ARTIFACT }}
-           retention-days: 7
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
+          instance: ${{ env.INSTANCE }}
+          artifact: ${{ env.ARTIFACT }}
+          docker-version: ${{ env.DOCKER_VERSION }}
+
+      - name: Upload documentation
+        uses: actions/upload-artifact@v3
         with:
-           name: algolia-indexes
-           path: artifacts/${{ env.ALGOLIA_ARTIFACT }}
-           retention-days: 7
+          name: docs
+          path: |
+            artifacts/${{ env.ARTIFACT }}
+            artifacts/report.json
+          retention-days: 7
            
   publish-indexes:
     # The type of runner that the job will run on
