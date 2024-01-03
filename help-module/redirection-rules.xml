@@ -13,4 +13,8 @@
         <description>Created after removal of "About Test" from help</description>
         <accepts>help.html</accepts>
     </rule>
+    <rule id="4795b16d">
+        <description>Created after removal of "Word Imported Doc" from help</description>
+        <accepts>example03.html</accepts>
+    </rule>
 </rules>
