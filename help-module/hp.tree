@@ -6,6 +6,8 @@
                  name="help"
                  start-page="Unit-tests.md">
 
+    <toc-element topic="Мшвущы.md"/>
+    <toc-element topic="Glossary.topic"/>
     <toc-element topic="Unit-tests.md"/>
     <toc-element topic="help.topic"/>
     <toc-element topic="getting_help.topic"/>
@@ -15,6 +17,7 @@
         <toc-element topic="Getting-started.topic"/>
     </toc-element>
     <toc-element topic="test.topic"/>
+    <toc-element topic="testets.md"/>
     <toc-element topic="APIs.md"/>
     <toc-element topic="Jupiter.md"/>
     <toc-element topic="Test-101.md"/>
@@ -23,4 +26,5 @@
         <toc-element topic="How-to-log-out.md"/>
     </toc-element>
     <toc-element topic="Used.topic"/>
+    <toc-element topic="New-new.topic"/>
 </instance-profile>

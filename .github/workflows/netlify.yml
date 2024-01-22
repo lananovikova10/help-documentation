@@ -13,7 +13,7 @@ on:
 env:
   # Name of module and id separated by a slash
   INSTANCE: help-module/hp
-  # Replace HI with the ID of the instance in capital letters
+  # Replace HI with the ID of the instance2 in capital letters
   ARTIFACT: webHelpHP2-all.zip
   # Docker image version
   DOCKER_VERSION: 232.10165.1

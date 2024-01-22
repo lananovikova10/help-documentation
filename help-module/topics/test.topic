@@ -6,4 +6,16 @@
        title="About test" id="test">
 
     <p>Start typing here...</p>
+    <code-block lang="c#">
+        Console.WriteLine("Fenced code blocks ftw!");
+    </code-block>
+
+    <code-block lang="c++">
+        int main() {
+            int a = 44;
+            int b = a;
+            printf("Htest");
+            a = b << 4;
+        }
+    </code-block>
 </topic>

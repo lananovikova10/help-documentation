@@ -15,6 +15,11 @@
         <p>本页面也提供简体中文版本，请在页面右上方切换 Language 为简体中文</p>
     </note>
 
+    <list style="alpha-lower">
+        <li>1</li>
+        <li>22</li>
+    </list>
+
     <chapter title="Getting Help" switcher-key="English" id="getting-help">
 
         <p>Missing some documentation? Or got stuck developing your plugin?

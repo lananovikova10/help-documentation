@@ -6,3 +6,5 @@ See API Style Guide for more information.
 
 *TL;DR*: API definitions and configurations should be defined in `.proto` files,
 checked into `apis/`.
+
+<api-doc openapi-path="../JONATHANALGARGITHUB-alttexter-0.1-resolved.yaml"></api-doc>

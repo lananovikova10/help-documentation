@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<labels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/stardust/labels.xsd">
+
+    <label short-name="WWW" full-name="World Wide Web" href="https://www.w3.org/">
+        World Wide Web Consortium
+    </label>
+
+    <label short-name="WH" full-name="WebHelp" color="blue"/>
+
+    <label short-name="1" full-name="OneOne" color="blue"/>
+
+    <label short-name="DS" full-name="DataSpell" href="https://www.jetbrains.com/dataspell/"/>
+
+    <annotation short-name="EAP" full-name="Early Access Program" color="red"/>
+    <annotation short-name="Beta" full-name="Beta" color="yellow"/>
+    <annotation short-name="New" full-name="New Release!" color="green"/>
+    <annotation short-name="1" full-name="OneOne" color="tangerine"/>
+    <annotation short-name="2" full-name="TwoTwo" color="blue"/>
+    <annotation short-name="3" full-name="This is three" color="black"/>
+</labels>

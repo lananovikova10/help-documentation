@@ -25,4 +25,8 @@
         <description>Created after removal of "Section Starting Page" from help</description>
         <accepts>Section-Starting-Page.html</accepts>
     </rule>
+    <rule id="1dcca7a">
+        <description>Created after removal of "new-super-topic" from help</description>
+        <accepts>new-super-topic.html</accepts>
+    </rule>
 </rules>

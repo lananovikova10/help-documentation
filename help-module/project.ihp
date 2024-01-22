@@ -6,5 +6,9 @@
     <vars src="v.list"/>
     <instance src="hp.tree" version="2"/>
     <topics dir="topics"/>
+    <topics dir="instance2"/>
     <images dir="images" version="1.0" web-path="img/"/>
+    <settings>
+        <default-property element-name="chapter" property-name="caps" value="title"/>
+    </settings>
 </ihp>

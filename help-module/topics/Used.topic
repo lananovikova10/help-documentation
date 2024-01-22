@@ -5,6 +5,9 @@
        xsi:noNamespaceSchemaLocation="https://helpserver.labs.jb.gg/help/schemas/mvp/topic.v2.xsd"
        id="Used"
        title="Used ports">
+
+    <label>Tag</label>
+    <annotations>Annotation</annotations>
     <chapter title="Microsoft Windows Server">
         <p>
             The following table describes network ports that must be opened to ensure proper communication with Microsoft Windows servers.</p>

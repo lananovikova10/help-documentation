@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Glossary" id="Glossary">
+
+    <chapter title="create">
+    <table style="none">
+        <tr>
+            <td>
+                <p>
+                    <i>Abstract Syntax Tree (AST)</i>
+                </p>
+            </td>
+            <td>
+                <p>a logical representation of code in memory (and disk) in the shape of a tree forest that describes hierarchies of nodes. These nodes have a notion of a parent-child relationship. Additionally, two nodes can be mutually connected with explicit references that go across the hierarchy structure.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <i>BaseLanguage</i>
+                </p>
+            </td>
+            <td>
+                <p>a projectional clone of Java 6 (with optional extensions for Java 7 and 8). It follows the Java specification and is 1:1 compatible with Java 6. Additionally, MPS provides several handy extensions to <i>BaseLanguage</i>, such as <i>dates</i>, <i>collections</i>, <i>closures</i> and many others.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <i>Code generation</i>
+                </p>
+            </td>
+            <td>
+                <p>the process of transformation code from one model (AST) into another model. For example, code describing a set of business rules can be transformed into plain Java so that it can be compiled with <i>javac</i> and run as part of an enterprise application.</p>
+                <p>Code generation in MPS has two phases - first a series of model-to-model transformations gradually reduce the concepts used in the AST of the program until a bottom-line set of base concepts is reached. Then a text-generating phase translates the AST into textual files.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <i>DevKit</i>
+                </p>
+            </td>
+            <td>
+                <p>a package of related languages that have been grouped for user convenience.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <i>Domain Specific Language (DSL)</i>
+                </p>
+            </td>
+            <td>
+                <p>a language dedicated to a particular problem domain, typically created with the aim of simplicity and greater expressivity compared to a general purpose language.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <i>Language plugin</i>
+                </p>
+            </td>
+            <td>
+                <p>a packaged library (a zip file) containing all the required elements in order to use a language either inside either IntelliJ IDEA or MPS.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <i>Projectional editor</i>
+                </p>
+            </td>
+            <td>
+                <p>an editor that allows the user to edit the AST representation of code directly, while mimicing the behavior of a text editor to some extent. The user sees text on the screen and edits it, however, in reality the text is only an illusion (projection) of an AST.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <i>Module</i>
+                </p>
+            </td>
+            <td>
+                <p>the top-level organization element of an MPS project that typically groups several models together. It can have four basic types: <b>Solution</b>, <b>Language</b>,
+                    <b>Generator</b> and <b>DevKit</b> and may depend on other modules.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <i>Model</i>
+                </p>
+            </td>
+            <td>
+                <p>a lower-level organizational element that holds user code in one or more root nodes. A model may depend on other models and also declares languages that are used to implement code held in the model.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <i>Node</i>
+            </td>
+            <td>the fundamental building block of AST. Each node holds properties of string, integer or boolean values and participates in the hierarchical structure of the model.</td>
+        </tr>
+        <tr>
+            <td>
+                <i>Root node</i>
+            </td>
+            <td>a node that has no parent node, but instead is directly contained in a model.</td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <i>Runtime solution</i>
+                </p>
+            </td>
+            <td>
+                <p>a solution that is required by a language, sometimes also called a library. Runtime solutions may contain normal models as well as stubs for Java sources, classes or jar files external to MPS.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <i>Structure</i>
+                </p>
+            </td>
+            <td>
+                <p>a language aspect defining the abstract syntax of a language. It specifies the allowed properties, children and references of individual concepts.
+                    Instances of these concepts, called "nodes", are then must obey these rules
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <i>Concept</i>
+                </p>
+            </td>
+            <td>
+                <p>a definition that describes a language element - its abstract and concrete structure, behavior, constraints, etc., which is then instantiated in the form of nodes to constitute a program.
+                    E.g. the <i>IfStatement</i> concept says that an <i>if</i> holds a boolean <i>Expression</i> and up-to two <i>StatementLists</i>.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <i>Constraints</i>
+                </p>
+            </td>
+            <td>
+                <p>a language aspect holding additional restrictions on concepts, their properties and relationships.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <i>Behavior</i>
+                </p>
+            </td>
+            <td>
+                <p>allows the language designer to define behavior of the language concepts.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <i>Editor</i>
+                </p>
+            </td>
+            <td>
+                <p>holds vizualization definitions of individual language concepts. Since the way concepts are viewed and edited on the screen can be customized, the editors specify how the user will interact with the language.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <i>Scope</i>
+                </p>
+            </td>
+            <td>
+                <p>the set of elements that are visible and applicable to a particular position within a program. Typically only a sub-set of all elements of a particular kind can be used at any given program location.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <i>Typesystem</i>
+                </p>
+            </td>
+            <td>
+                <p>a set of rules that validate and infer types of concepts in a program. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <i>Actions</i>
+                </p>
+            </td>
+            <td>
+                <p>user-invoked commands that may perform changes to the code. Actions can be attached to keyboard shortcuts or menu items.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <i>Intention actions</i>
+                </p>
+            </td>
+            <td>
+                <p>context-sensitive actions offered to the language user through a small pop-up window triggered by the <shortcut key="ShowIntentionActions"/> key shortcut. These actions typically perform a relatively local refactoring to the code under carret or a selected block of code.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <i>Surround With intention actions</i>
+                </p>
+            </td>
+            <td>
+                <p>intentions applicable to a selected block of code that wrap the block by another concept. E.g. <i>Surround with Try-Catch</i>.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <i>Refactoring</i>
+                </p>
+            </td>
+            <td>
+                <p>a potentially substantial automated change in code structure triggered by a user action.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <i>Virtual folder</i>
+            </td>
+            <td>a string property of a root node expressing its "name-space" using the dot notation (such as a.b.c), which allows logical grouping of root nodes within models.</td>
+        </tr>
+    </table>
+    </chapter>
+</topic>
