@@ -6,7 +6,7 @@
                  name="help"
                  start-page="Unit-tests.md">
 
-    <toc-element topic="Мшвущы.md"/>
+    <toc-element topic="magic.md"/>
     <toc-element topic="Glossary.topic"/>
     <toc-element topic="Unit-tests.md"/>
     <toc-element topic="help.topic"/>
