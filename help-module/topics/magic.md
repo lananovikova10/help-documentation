@@ -10,7 +10,7 @@
 
 ## Video broken with a short link
 
-<video src="https://youtu.be/vlNESRmGGlg"/>
+<video src="https://youtu.be/vlNESRmGGlg?si=wsYR3SClcZp2yj56"/>
 
 ## Same video full link-2
 
