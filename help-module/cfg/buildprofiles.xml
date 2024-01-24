@@ -21,6 +21,7 @@
 <!--        <custom-video-cover>video-cover.png</custom-video-cover>-->
         <og-image>https://i0.wp.com/templeofgeek.com/wp-content/uploads/2019/05/detective_pikachu_01.jpg</og-image>
         <showDownloadButton>true</showDownloadButton>
+        <custom-favicons>https://kotlinlang.org/assets/images/favicon.svg</custom-favicons>
     </variables>
     <build-profile instance="hp">
         <variables>
