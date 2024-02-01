@@ -11,6 +11,10 @@ Code:
     }
 ```
 
+```tex
+k = {\color{red}x} \mathbin{\color{blue}-} 2
+```
+
 <b>or</b>
 <code-block style="block">
     expr2 &lt;: expr1

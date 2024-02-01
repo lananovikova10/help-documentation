@@ -8,7 +8,7 @@
        id="getting_help" title="Getting Help" switcher-label="Language">
     <show-structure for="chapter" depth="3"/>
 
-    <link-summary>How to submit issues about this guide and get support for plugin development.</link-summary>
+    <link-summary>How to %product% submit issues about this guide and get support for plugin development.</link-summary>
 
     <note switcher-key="English">
         <p>This page is also available in Chinese, please switch Language on right top</p>
