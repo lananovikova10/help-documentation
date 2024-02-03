@@ -19,5 +19,6 @@ checked into `apis/`.
     ]]>
 </code-block>
 
-<api-doc openapi-path="../JONATHANALGARGITHUB-alttexter-0.1-resolved.yaml"></api-doc>
+[//]: # (<api-doc openapi-path="../JONATHANALGARGITHUB-alttexter-0.1-resolved.yaml"></api-doc>)
 
+<api-doc openapi-path="../../petstore.yaml"/>
