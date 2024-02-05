@@ -13,9 +13,13 @@
         <web-root>https://domain.com</web-root>
         <primary-color>emerald</primary-color>
         <color-preset>vivid</color-preset>
-        <algolia-index>prod_HELP_DOCUMENTATION</algolia-index>
-        <algolia-id>0J2F033YWG</algolia-id>
-        <algolia-api-key>5c71ca83bb8afeb0507f4da9362b3fa0</algolia-api-key>
+<!--        <algolia-index>prod_HELP_DOCUMENTATION</algolia-index>-->
+<!--        <algolia-id>0J2F033YWG</algolia-id>-->
+<!--        <algolia-api-key>5c71ca83bb8afeb0507f4da9362b3fa0</algolia-api-key>-->
+            <algolia-id>${env.ALGOLIA_ID}</algolia-id>
+            <algolia-index>${env.ALGOLIA_INDEX}</algolia-index>
+            <algolia-api-key>${env.ALGOLIA_API_KEY}</algolia-api-key>
+            <web-root>${env.WEB_ROOT}</web-root>
         <header-logo>cwm.svg</header-logo>
         <versions-switcher>https://raw.githubusercontent.com/lananovikova10/versions-json/main/help-versions-ntlf.json</versions-switcher>
 <!--        <custom-video-cover>video-cover.png</custom-video-cover>-->
