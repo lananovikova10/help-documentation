@@ -3,4 +3,5 @@
 <vars>
     <var name="product" value="Test"/>
     <var name="project_structure" value="project structure"/>
+    <var name="algolia-id" value="0J2F033YWG"/>
 </vars>

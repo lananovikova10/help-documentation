@@ -244,4 +244,9 @@
         </tr>
     </table>
     </chapter>
+    <seealso>
+        <category ref="1">
+            <a href="mailto:someone@example.com">Send email</a>
+        </category>
+    </seealso>
 </topic>
