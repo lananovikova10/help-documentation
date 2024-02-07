@@ -39,19 +39,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Set up environment
-          run: |
-            echo "ALGOLIA_API_KEY=$ALGOLIA_API_KEY" >> $GITHUB_ENV
-            echo "ALGOLIA_ID=$ALGOLIA_ID" >> $GITHUB_ENV
-            echo "ALGOLIA_INDEX=$ALGOLIA_INDEX" >> $GITHUB_ENV
-
-      - name: Generate buildprofiles.xml
-           run: |
-              # Your logic to generate buildprofiles.xml with the environment variables
-              echo "<algolia-id>${ALGOLIA_ID}</algolia-id>" > buildprofiles.xml
-              echo "<algolia-index>${ALGOLIA_INDEX}</algolia-index>" >> buildprofiles.xml
-              echo "<algolia-api-key>${ALGOLIA_API_KEY}</algolia-api-key>" >> buildprofiles.xml   
-
       - name: Setup Node.js environment
         uses: actions/setup-node@v3
         with:
